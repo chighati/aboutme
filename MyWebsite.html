@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canlas Rafael</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="Dino.jpg" class ="logo"></a>
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+               
+            </ul>
+            
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Who is <br> <span>Rafael Canlas</span></h2>
+                <p>Hi, I'm Rafael Luis Canlas, and I'm on the path to becoming a computer engineer. 
+                    I love all things tech and am passionate about making cool stuff with computers. I'm here to learn, innovate, and create a better digital world for everyone</p>
+                <a href="more.html">More about me</a>
+        </div>
+        <div class="imgBox">
+            <img src="chigger.png" class="Rafael">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="chigger.png" onclick="imgSlider('chigger.png');changeCircleColor('#738054')"></li>
+        <li><img src="chigger4.png" onclick="imgSlider('chigger4.png'),changeCircleColor('#779768')"></li>
+        <li><img src="chigger3.png" onclick="imgSlider('chigger3.png'),changeCircleColor('#b99976')"></li>
+    </ul>
+    
+    
+    <ul class="soc">
+        <li><a href="https://www.facebook.com/rafael.l.canlas" target="_blank"><img src="iconfb.png"></a></li>
+        <li><a href="https://www.tiktok.com/@rluiscanlas" target="_blank"><img src="icontt.png"></a></li>
+        <li><a href="https://www.instagram.com/rluiscanlas/" target="_blank"><img src="iconinsta.png"></a></li>
+    </ul>
+    
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+        document.querySelector('.Rafael').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        
+        
+    </script>
+    
+</body>    
+
+
+</html>
